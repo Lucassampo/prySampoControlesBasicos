@@ -33,20 +33,23 @@
             this.optRojo = new System.Windows.Forms.RadioButton();
             this.optAzul = new System.Windows.Forms.RadioButton();
             this.btnAsignar = new System.Windows.Forms.Button();
+            this.chkPicante = new System.Windows.Forms.CheckBox();
+            this.chkMayo = new System.Windows.Forms.CheckBox();
+            this.chkKetchup = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // lblCopiado
             // 
             this.lblCopiado.AutoSize = true;
-            this.lblCopiado.Location = new System.Drawing.Point(139, 119);
+            this.lblCopiado.Location = new System.Drawing.Point(197, 185);
             this.lblCopiado.Name = "lblCopiado";
-            this.lblCopiado.Size = new System.Drawing.Size(35, 13);
+            this.lblCopiado.Size = new System.Drawing.Size(107, 13);
             this.lblCopiado.TabIndex = 0;
-            this.lblCopiado.Text = "label1";
+            this.lblCopiado.Text = "El texto aparece aqui";
             // 
             // txtEscribir
             // 
-            this.txtEscribir.Location = new System.Drawing.Point(229, 116);
+            this.txtEscribir.Location = new System.Drawing.Point(204, 116);
             this.txtEscribir.Name = "txtEscribir";
             this.txtEscribir.Size = new System.Drawing.Size(100, 20);
             this.txtEscribir.TabIndex = 1;
@@ -84,11 +87,47 @@
             this.btnAsignar.UseVisualStyleBackColor = true;
             this.btnAsignar.Click += new System.EventHandler(this.btnAsignar_Click);
             // 
+            // chkPicante
+            // 
+            this.chkPicante.AutoSize = true;
+            this.chkPicante.Location = new System.Drawing.Point(109, 43);
+            this.chkPicante.Name = "chkPicante";
+            this.chkPicante.Size = new System.Drawing.Size(62, 17);
+            this.chkPicante.TabIndex = 5;
+            this.chkPicante.Text = "Picante";
+            this.chkPicante.UseVisualStyleBackColor = true;
+            this.chkPicante.CheckedChanged += new System.EventHandler(this.chkPicante_CheckedChanged);
+            // 
+            // chkMayo
+            // 
+            this.chkMayo.AutoSize = true;
+            this.chkMayo.Location = new System.Drawing.Point(224, 43);
+            this.chkMayo.Name = "chkMayo";
+            this.chkMayo.Size = new System.Drawing.Size(52, 17);
+            this.chkMayo.TabIndex = 6;
+            this.chkMayo.Text = "Mayo";
+            this.chkMayo.UseVisualStyleBackColor = true;
+            this.chkMayo.CheckedChanged += new System.EventHandler(this.chkMayo_CheckedChanged);
+            // 
+            // chkKetchup
+            // 
+            this.chkKetchup.AutoSize = true;
+            this.chkKetchup.Location = new System.Drawing.Point(331, 43);
+            this.chkKetchup.Name = "chkKetchup";
+            this.chkKetchup.Size = new System.Drawing.Size(66, 17);
+            this.chkKetchup.TabIndex = 7;
+            this.chkKetchup.Text = "Ketchup";
+            this.chkKetchup.UseVisualStyleBackColor = true;
+            this.chkKetchup.CheckedChanged += new System.EventHandler(this.chkKetchup_CheckedChanged);
+            // 
             // frmSecundario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(645, 450);
+            this.ClientSize = new System.Drawing.Size(472, 450);
+            this.Controls.Add(this.chkKetchup);
+            this.Controls.Add(this.chkMayo);
+            this.Controls.Add(this.chkPicante);
             this.Controls.Add(this.btnAsignar);
             this.Controls.Add(this.optAzul);
             this.Controls.Add(this.optRojo);
@@ -108,5 +147,8 @@
         private System.Windows.Forms.RadioButton optRojo;
         private System.Windows.Forms.RadioButton optAzul;
         private System.Windows.Forms.Button btnAsignar;
+        private System.Windows.Forms.CheckBox chkPicante;
+        private System.Windows.Forms.CheckBox chkMayo;
+        private System.Windows.Forms.CheckBox chkKetchup;
     }
 }

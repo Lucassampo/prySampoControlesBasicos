@@ -33,6 +33,7 @@ namespace prySampoControlesBasicos
             this.lblEjeX = new System.Windows.Forms.Label();
             this.lblEjeY = new System.Windows.Forms.Label();
             this.lblBienvenido = new System.Windows.Forms.Label();
+            this.btnSecundario = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblEjeX
@@ -67,11 +68,22 @@ namespace prySampoControlesBasicos
             this.lblBienvenido.Visible = false;
             this.lblBienvenido.MouseEnter += new System.EventHandler(this.lblBienvenido_MouseEnter);
             // 
+            // btnSecundario
+            // 
+            this.btnSecundario.Location = new System.Drawing.Point(235, 311);
+            this.btnSecundario.Name = "btnSecundario";
+            this.btnSecundario.Size = new System.Drawing.Size(157, 99);
+            this.btnSecundario.TabIndex = 3;
+            this.btnSecundario.Text = "secundario";
+            this.btnSecundario.UseVisualStyleBackColor = true;
+            this.btnSecundario.Click += new System.EventHandler(this.btnSecundario_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSecundario);
             this.Controls.Add(this.lblBienvenido);
             this.Controls.Add(this.lblEjeY);
             this.Controls.Add(this.lblEjeX);
@@ -94,5 +106,6 @@ namespace prySampoControlesBasicos
         private System.Windows.Forms.Label lblEjeY;
         private System.Windows.Forms.Label lblBienvenido;
         private EventHandler lblFormulario_Click;
+        private System.Windows.Forms.Button btnSecundario;
     }
 }

@@ -50,5 +50,11 @@ namespace prySampoControlesBasicos
             lblBienvenido.Location = new Point(random.Next(maxWidth), random.Next(maxHeight));
 
         }
+
+        private void btnSecundario_Click(object sender, EventArgs e)
+        {
+            frmSecundario secundario = new frmSecundario();
+            secundario.ShowDialog();
+        }
     }
 }

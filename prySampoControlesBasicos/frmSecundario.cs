@@ -40,5 +40,29 @@ namespace prySampoControlesBasicos
            
         }
 
+        private void chkPicante_CheckedChanged(object sender, EventArgs e)
+        {
+            if(chkPicante.Checked ==true) 
+            {
+                lblCopiado.Text = "picante";
+            
+            }
+        }
+
+        private void chkMayo_CheckedChanged(object sender, EventArgs e)
+        {
+            if( chkMayo.Checked ==true) 
+            { 
+              lblCopiado.Text = "Mayonesa";
+            }
+        }
+
+        private void chkKetchup_CheckedChanged(object sender, EventArgs e)
+        {
+         if(!chkKetchup.Checked == true) 
+            {
+                lblCopiado.Text = "Ketchup";
+            }
+        }
     }
 }

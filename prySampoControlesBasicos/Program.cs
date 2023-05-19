@@ -16,7 +16,8 @@ namespace prySampoControlesBasicos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmSecundario());
+            Application.Run(new frmPrincipal());
+
         }
     }
 }
